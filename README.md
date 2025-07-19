@@ -1,2 +1,1 @@
-# react-tic-tac-toe
-A simple tic-tac-toe game created using React
+# react-ecommerce-app
