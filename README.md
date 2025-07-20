@@ -21,7 +21,11 @@ React is a JavaScript library for building fast, scalable front-end applications
 
 ### **How does React work?**
 
-React operates by creating an in-memory virtual DOM rather than directly manipulating the browser’s DOM. It performs necessary manipulations within this virtual representation before applying changes to the actual browser DOM.
+React operates by creating an in-memory virtual DOM rather than directly manipulating the browser’s DOM. It performs necessary manipulations within this virtual representation before applying changes to the actual browser DOM. 
+
+- __Actual DOM and Virtual DOM:__  Initially, there is an Actual DOM (Real DOM) containing a div with two child elements: h1 and h2. React maintains a previous Virtual DOM to track the UI state before any updates.
+- __Detecting Changes:__ When a change occurs (e.g., adding a new h3 element), React generates a New Virtual DOM. React compares the previous Virtual DOM with the New Virtual DOM using a process called _reconciliation_.
+- __Efficient DOM Update:__ React identifies the differences (in this case, the new h3 element). Instead of updating the entire DOM, React updates only the changed part in the New Actual DOM, making the update process more efficient.
 
 ### **How Babel Works with ReactJS?**
 
