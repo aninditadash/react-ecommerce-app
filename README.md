@@ -8,7 +8,7 @@ React is a JavaScript library for building fast, scalable front-end applications
 
 - JSX (JavaScript XML) combines HTML and JavaScript in a single syntax, allowing to create UI components in React. It simplifies rendering dynamic content by embedding JavaScript expressions inside HTML-like tags.
 - When React processes the JSX code, it converts it into JavaScript using Babel. This JavaScript code then creates real HTML elements in the browser’s DOM.
-- __[Sunsetting Create React App]__(https://react.dev/blog/2025/02/14/sunsetting-create-react-app)
+- [__Sunsetting Create React App__](https://react.dev/blog/2025/02/14/sunsetting-create-react-app)
 - React is a JavaScript library, not a full framework, but it's often used with frameworks to build web applications. React frameworks like Next.js, Gatsby, and Remix build upon React to provide additional features such as server-side rendering, routing, and data fetching.
 - For existing apps built using CRA - [How to Migrate to a Build Tool using Vite](https://www.robinwieruch.de/vite-create-react-app/), [Using Parcel](https://parceljs.org/migration/cra/)
 - [Create new React apps with a framework e.g. Next.js](https://nextjs.org/docs/app/guides/migrating/from-create-react-app), [Next.js](https://nextjs.org/), [Expo framework](https://expo.dev/)
