@@ -14,6 +14,15 @@ React is a JavaScript library for building fast, scalable front-end applications
 - [Create new React apps with a framework e.g. Next.js](https://nextjs.org/docs/app/guides/migrating/from-create-react-app), [Next.js](https://nextjs.org/), [Expo framework](https://expo.dev/)
 - [Steps to create a React project w/o using CRA](https://react.dev/learn/build-a-react-app-from-scratch), <https://www.geeksforgeeks.org/reactjs/reactjs-babel-introduction/>
 - [Server-side rendering in React](https://react.dev/blog/2025/02/14/sunsetting-create-react-app#server-rendering-is-optional)
+- [Which features make up the React team’s full-stack architecture vision?](https://react.dev/learn/creating-a-react-app#which-features-make-up-the-react-teams-full-stack-architecture-vision)
+
+### **Creating a React App**
+
+Full-stack frameworks: These recommended frameworks support all the features needed to deploy and scale your app in production. They have integrated the latest React features and take advantage of React’s architecture. <https://react.dev/learn/creating-a-react-app>
+
+- __Next.js (App Router):__ Next.js’s App Router is a React framework that takes full advantage of React’s architecture to enable full-stack React apps. <https://nextjs.org/docs>
+- __React Router (v7):__ React Router is the most popular routing library for React and can be paired with Vite to create a full-stack React framework. It emphasizes standard Web APIs and has several ready to deploy templates for various JavaScript runtimes and platforms. <https://reactrouter.com/start/framework/installation>
+- __Expo (for native apps):__ Expo is a React framework that lets you create universal Android, iOS, and web apps with truly native UIs. It provides an SDK for React Native that makes the native parts easier to use.
 
 ### **Advantages of React**
 
