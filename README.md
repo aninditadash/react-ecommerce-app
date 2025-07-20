@@ -1,4 +1,4 @@
-# Introduction to React
+# React Basics
 
 ## **Table of Contents**
 
