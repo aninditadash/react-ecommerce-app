@@ -65,6 +65,10 @@ The Reconciliation process is responsible for comparing the previous Virtual DOM
 
 React Fiber is a complete re-implementation of React's core reconciliation algorithm, introduced in React 16. Its primary purpose is to improve the performance and responsiveness of React applications, especially in scenarios involving complex UIs, animations, and user interactions. 
 
+## **React Compiler**
+
+https://react.dev/learn/react-compiler
+
 ### **Memoization in React** (to be done later)
 
 React.memo() for Functional Components: React provides a higher-order component called React.memo() that can be used to optimize the rendering of functional components.
