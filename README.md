@@ -15,6 +15,7 @@ React is a JavaScript library for building fast, scalable front-end applications
 - [Steps to create a React project w/o using CRA](https://react.dev/learn/build-a-react-app-from-scratch), <https://www.geeksforgeeks.org/reactjs/reactjs-babel-introduction/>
 - [Server-side rendering in React](https://react.dev/blog/2025/02/14/sunsetting-create-react-app#server-rendering-is-optional)
 - [Which features make up the React team’s full-stack architecture vision?](https://react.dev/learn/creating-a-react-app#which-features-make-up-the-react-teams-full-stack-architecture-vision)
+- [Add React to an Existing Project](https://react.dev/learn/add-react-to-an-existing-project)
 
 ### **Creating a React App**
 
