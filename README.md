@@ -74,6 +74,8 @@ https://react.dev/learn/react-compiler
 React.memo() for Functional Components: React provides a higher-order component called React.memo() that can be used to optimize the rendering of functional components. 
 https://www.geeksforgeeks.org/reactjs/what-is-memoization-in-react/
 
+## **React Components**
 
+React components are independent, reusable building blocks in a React application that define what gets displayed on the UI. They accept inputs called `props` and return React elements describing the UI.
 
 
