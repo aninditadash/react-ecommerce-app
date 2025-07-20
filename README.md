@@ -21,11 +21,12 @@ React is a JavaScript library for building fast, scalable front-end applications
 
 ### **How does React work?**
 
-React operates by creating an in-memory virtual DOM rather than directly manipulating the browser’s DOM. It performs necessary manipulations within this virtual representation before applying changes to the actual browser DOM. 
+React operates by creating a lightweight, in-memory representation of the real DOM called virtual DOM rather than directly manipulating the browser’s DOM. It performs necessary manipulations within this virtual representation before applying changes to the actual browser DOM.
 
-- __Actual DOM and Virtual DOM:__  Initially, there is an Actual DOM (Real DOM) containing a div with two child elements: h1 and h2. React maintains a previous Virtual DOM to track the UI state before any updates.
-- __Detecting Changes:__ When a change occurs (e.g., adding a new h3 element), React generates a New Virtual DOM. React compares the previous Virtual DOM with the New Virtual DOM using a process called _reconciliation_.
-- __Efficient DOM Update:__ React identifies the differences (in this case, the new h3 element). Instead of updating the entire DOM, React updates only the changed part in the New Actual DOM, making the update process more efficient.
+- __Rendering the Virtual DOM:__  React creates a virtual representation of the UI as a tree of JavaScript objects.
+- __Updating State:__ It generates a new Virtual DOM tree to reflect the updated state when the application state changes.
+- __Diffing Algorithm:__ React compares the new Virtual DOM tree with the previous one using its efficient diffing algorithm to identify the minimal set of changes required.
+- __Updating the Real DOM:__ React applies only the necessary changes to the real DOM, optimizing rendering performance.
 
 ### **How Babel Works with ReactJS?**
 
@@ -35,13 +36,23 @@ Babel is a JavaScript transpiler that converts modern JavaScript code (like ES6+
 - __Transformation:__ Babel applies various plugins to the AST to convert the code into a desired format. For example, it converts JSX into `React.createElement()` calls or converts ES6 arrow functions into regular functions.
 - __Code Generation:__ Finally, Babel generates JavaScript code from the transformed AST. This is the final JavaScript output that browsers can execute.
 
-### **Reconciliation Algorithm**
+### **Reconciliation process in React**
 
-The Reconciliation Algorithm is responsible for comparing the previous Virtual DOM with the new one to determine what changed. React uses an optimized diffing algorithm to minimize the number of changes it needs to apply to the real DOM.
+The Reconciliation process is responsible for comparing the previous Virtual DOM with the new one to determine what changed. React uses an optimized diffing algorithm to minimize the number of changes it needs to apply to the real DOM. The reconciliation process involves the following steps:
+
+- React calls the `render()` method of a component to generate a new Virtual DOM representation. This new Virtual DOM is compared with the previous Virtual DOM snapshot.
+- React compares the old and new Virtual DOM trees to determine the differences, using the __Diffing Algorithm__. Instead of re-rendering the entire UI, React updates only the changed nodes.
+- Once the differences are determined, React applies the updates to the real DOM in the most efficient way. It batches updates and minimizes reflows and repaints for better performance.
+- The diffing algorithm identifies the differences between the old and new virtual DOM trees, while reconciliation encompasses the entire process of updating the real DOM based on these differences. 
 
 ### **React Fiber**
-React Fiber is the reimplementation of the React core algorithm that improves the rendering performance, especially in complex applications.
+
+React Fiber is a complete re-implementation of React's core reconciliation algorithm, introduced in React 16. Its primary purpose is to improve the performance and responsiveness of React applications, especially in scenarios involving complex UIs, animations, and user interactions. 
+
+### **Memoization in React** (to be done later)
 
 React.memo() for Functional Components: React provides a higher-order component called React.memo() that can be used to optimize the rendering of functional components.
+
+
 
 
