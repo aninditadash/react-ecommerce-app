@@ -13,6 +13,7 @@ React is a JavaScript library for building fast, scalable front-end applications
 - For existing apps built using CRA - [How to Migrate to a Build Tool using Vite](https://www.robinwieruch.de/vite-create-react-app/), [Using Parcel](https://parceljs.org/migration/cra/)
 - [Create new React apps with a framework e.g. Next.js](https://nextjs.org/docs/app/guides/migrating/from-create-react-app), [Next.js](https://nextjs.org/), [Expo framework](https://expo.dev/)
 - [Steps to create a React project w/o using CRA](https://react.dev/learn/build-a-react-app-from-scratch), <https://www.geeksforgeeks.org/reactjs/reactjs-babel-introduction/>
+- [Server rendering in React](https://react.dev/blog/2025/02/14/sunsetting-create-react-app#server-rendering-is-optional)
 
 ### **Advantages of React**
 
