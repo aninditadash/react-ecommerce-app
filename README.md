@@ -71,7 +71,8 @@ https://react.dev/learn/react-compiler
 
 ### **Memoization in React** (to be done later)
 
-React.memo() for Functional Components: React provides a higher-order component called React.memo() that can be used to optimize the rendering of functional components.
+React.memo() for Functional Components: React provides a higher-order component called React.memo() that can be used to optimize the rendering of functional components. 
+https://www.geeksforgeeks.org/reactjs/what-is-memoization-in-react/
 
 
 
