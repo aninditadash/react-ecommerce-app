@@ -8,6 +8,11 @@ React is a JavaScript library for building fast, scalable front-end applications
 
 - JSX (JavaScript XML) combines HTML and JavaScript in a single syntax, allowing to create UI components in React. It simplifies rendering dynamic content by embedding JavaScript expressions inside HTML-like tags.
 - When React processes the JSX code, it converts it into JavaScript using Babel. This JavaScript code then creates real HTML elements in the browser’s DOM.
+- __[Sunsetting Create React App]__(https://react.dev/blog/2025/02/14/sunsetting-create-react-app)
+- React is a JavaScript library, not a full framework, but it's often used with frameworks to build web applications. React frameworks like Next.js, Gatsby, and Remix build upon React to provide additional features such as server-side rendering, routing, and data fetching.
+- For existing apps built using CRA - [How to Migrate to a Build Tool using Vite](https://www.robinwieruch.de/vite-create-react-app/), [Using Parcel](https://parceljs.org/migration/cra/)
+- [Create new React apps with a framework e.g. Next.js](https://nextjs.org/docs/app/guides/migrating/from-create-react-app), [Next.js](https://nextjs.org/)
+- [Steps to create a React project w/o using CRA](https://react.dev/learn/build-a-react-app-from-scratch), <https://www.geeksforgeeks.org/reactjs/reactjs-babel-introduction/>
 
 ### **Advantages of React**
 
@@ -30,7 +35,7 @@ React operates by creating a lightweight, in-memory representation of the real D
 
 ### **How Babel Works with ReactJS?**
 
-Babel is a JavaScript transpiler that converts modern JavaScript code (like ES6+ and JSX) into a backwards-compatible version that older browsers can understand. Babel transpiles ES6+ code where it converts modern JavaScript (ES6 and newer) into compatible JavaScript that runs on older browsers. It also transpiles JSX into standard JavaScript that browsers can understand. It enable use of experimental features or future versions of JavaScript before they are supported by browsers. [Steps to create a React project w/o using CRA](https://www.geeksforgeeks.org/reactjs/reactjs-babel-introduction/). This process typically involves three main stages:
+Babel is a JavaScript transpiler that converts modern JavaScript code (like ES6+ and JSX) into a backwards-compatible version that older browsers can understand. Babel transpiles ES6+ code where it converts modern JavaScript (ES6 and newer) into compatible JavaScript that runs on older browsers. It also transpiles JSX into standard JavaScript that browsers can understand. It enable use of experimental features or future versions of JavaScript before they are supported by browsers. This process typically involves three main stages:
 
 - __Parsing:__ Babel parses the JavaScript code into an _Abstract Syntax Tree (AST)_, which is a structured representation of the code.
 - __Transformation:__ Babel applies various plugins to the AST to convert the code into a desired format. For example, it converts JSX into `React.createElement()` calls or converts ES6 arrow functions into regular functions.
