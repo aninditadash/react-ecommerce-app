@@ -74,7 +74,13 @@ https://react.dev/learn/react-compiler
 React.memo() for Functional Components: React provides a higher-order component called React.memo() that can be used to optimize the rendering of functional components. 
 https://www.geeksforgeeks.org/reactjs/what-is-memoization-in-react/
 
-## **React Components**
+## **Core Concepts of React**
+
+### **ReactDOM**
+
+ReactDOM is a core react package that provides methods to interact with the DOM and is responsible for rendering the elements or Components in the actual DOM of the web page. It can be used at the top level of a web app to enable an efficient way of managing DOM elements of the web page. `render()` - used to render a single React Component or several Components wrapped together in a Component or a div element. `hydrate()` - equivalent to the render() method but is implemented for server-side rendering. `createPortal()` - allows to render a component into a DOM node that resides outside the current DOM hierarchy of the parent component.
+
+### **React Components**
 
 React components are independent, reusable building blocks in a React application that define what gets displayed on the UI. They accept inputs called `props` and return React elements describing the UI.
 
