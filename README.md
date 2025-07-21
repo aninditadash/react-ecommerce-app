@@ -74,14 +74,23 @@ https://react.dev/learn/react-compiler
 React.memo() for Functional Components: React provides a higher-order component called React.memo() that can be used to optimize the rendering of functional components. 
 https://www.geeksforgeeks.org/reactjs/what-is-memoization-in-react/
 
-## **Core Concepts of React**
-
-### **ReactDOM**
+## **ReactDOM**
 
 ReactDOM is a core react package that provides methods to interact with the DOM and is responsible for rendering the elements or Components in the actual DOM of the web page. It can be used at the top level of a web app to enable an efficient way of managing DOM elements of the web page. `render()` - used to render a single React Component or several Components wrapped together in a Component or a div element. `hydrate()` - equivalent to the render() method but is implemented for server-side rendering. `createPortal()` - allows to render a component into a DOM node that resides outside the current DOM hierarchy of the parent component.
 
-### **React Components**
+## **React Components**
 
 React components are independent, reusable building blocks in a React application that define what gets displayed on the UI. They accept inputs called `props` and return React elements describing the UI.
 
+### __Pure Components in React:__ 
 
+Pure Components are similar to regular class components but with a key optimization. They skip re-renders when the props and state remain the same. _Usage: Skipping unnecessary re-renders for class components._ 
+
+- React normally re-renders a component whenever its parent re-renders.
+- As an optimization, we can create a component that React will not re-render when its parent re-renders so long as its new props and state are the same as the old props and state.
+- A React component should always have pure rendering logic. This means that it must return the same output if its props, state, and context haven’t changed.
+- By using PureComponent, we are telling React that the component complies with this requirement, so React doesn’t need to re-render as long as its props and state haven’t changed. However, the component will still re-render if a context that it’s using changes.
+
+### **Migrating from a PureComponent class component to a function**
+
+It is recommended to use function components instead of class components in new code. To convert a component from a class to a function, wrap it in `memo`. Unlike `PureComponent`, `memo` does not compare the new and the old state. In function components, _calling the set function with the same state already prevents re-renders by default, even without `memo`_.
