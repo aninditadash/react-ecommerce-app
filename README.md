@@ -94,3 +94,21 @@ Pure Components are similar to regular class components but with a key optimizat
 ### **Migrating from a PureComponent class component to a function**
 
 It is recommended to use function components instead of class components in new code. To convert a component from a class to a function, wrap it in `memo`. Unlike `PureComponent`, `memo` does not compare the new and the old state. In function components, _calling the set function with the same state already prevents re-renders by default, even without `memo`_.
+
+
+The Module Dependency Tree 
+Another relationship in a React app that can be modeled with a tree are an app’s module dependencies. As we break up our components and logic into separate files, we create JS modules where we may export components, functions, or constants. More details - https://react.dev/learn/understanding-your-ui-as-a-tree
+
+Each node in a module dependency tree is a module and each branch represents an import statement in that module.
+
+If we take the previous Inspirations app, we can build a module dependency tree, or dependency tree for short.
+
+<img src="https://react.dev/_next/image?url=%2Fimages%2Fdocs%2Fdiagrams%2Fmodule_dependency_tree.png&w=1920&q=75" width=500 />
+
+### **ReactJS Fragments**
+
+ReactJS Fragments are a way to group multiple elements without adding an extra node to the DOM. It allows you to return multiple child elements from a component without wrapping them in a parent container like a <div>. We can `<React.Fragment>...</React.Fragment>` or the short hand syntax `<>...</>` to wrap multiple elements.
+ 
+
+
+
