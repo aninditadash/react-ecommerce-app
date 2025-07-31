@@ -8,24 +8,9 @@ React is a JavaScript library for building fast, scalable front-end applications
 
 - JSX (JavaScript XML) combines HTML and JavaScript in a single syntax, allowing to create UI components in React. It simplifies rendering dynamic content by embedding JavaScript expressions inside HTML-like tags.
 - When React processes the JSX code, it converts it into JavaScript using Babel. This JavaScript code then creates real HTML elements in the browser’s DOM.
-- [__Sunsetting Create React App__](https://react.dev/blog/2025/02/14/sunsetting-create-react-app)
-- React is a JavaScript library, not a full framework, but it's often used with frameworks to build web applications. React frameworks like Next.js, Gatsby, and Remix build upon React to provide additional features such as server-side rendering, routing, and data fetching.
-- For existing apps built using CRA - [How to Migrate to a Build Tool using Vite](https://www.robinwieruch.de/vite-create-react-app/), [Using Parcel](https://parceljs.org/migration/cra/)
-- [Create new React apps with a framework e.g. Next.js](https://nextjs.org/docs/app/guides/migrating/from-create-react-app), [Next.js](https://nextjs.org/), [Expo framework](https://expo.dev/)
-- [Steps to create a React project w/o using CRA](https://react.dev/learn/build-a-react-app-from-scratch), <https://www.geeksforgeeks.org/reactjs/reactjs-babel-introduction/>
-- [Server-side rendering in React](https://react.dev/blog/2025/02/14/sunsetting-create-react-app#server-rendering-is-optional)
-- [Which features make up the React team’s full-stack architecture vision?](https://react.dev/learn/creating-a-react-app#which-features-make-up-the-react-teams-full-stack-architecture-vision)
-- [Add React to an Existing Project](https://react.dev/learn/add-react-to-an-existing-project)
-
-### **Creating a React App**
-
-Full-stack frameworks: These recommended frameworks support all the features needed to deploy and scale your app in production. They have integrated the latest React features and take advantage of React’s architecture. <https://react.dev/learn/creating-a-react-app>
-
-- __Next.js (App Router):__ Next.js’s App Router is a React framework that takes full advantage of React’s architecture to enable full-stack React apps. <https://nextjs.org/docs>
-- __React Router (v7):__ React Router is the most popular routing library for React and can be paired with Vite to create a full-stack React framework. It emphasizes standard Web APIs and has several ready to deploy templates for various JavaScript runtimes and platforms. <https://reactrouter.com/start/framework/installation>
-- __Expo (for native apps):__ Expo is a React framework that lets you create universal Android, iOS, and web apps with truly native UIs. It provides an SDK for React Native that makes the native parts easier to use.
 
 ### **Advantages of React**
+
 
 - __Component-Based Architecture:__ React encourages breaking down the UI into reusable components, which can be used throughout the application, saving development time and effort (_Reusability_). Changes in one component generally don't affect other components, making it easier to maintain and update the application (_Maintainability_).
 - __Virtual DOM:__ React uses a Virtual DOM (_lightweight representation of the actual DOM_) to improve the performance of web applications. Instead of updating the real DOM directly, React first updates the Virtual DOM and compares it to the previous one, applying only the minimal changes required (_Improved Performance and Optimized Rendering_).
@@ -116,3 +101,20 @@ ReactJS Fragments are a way to group multiple elements without adding an extra n
 ### **Immer for complex state object mutations**
 
 <https://react.dev/learn/updating-objects-in-state#how-does-immer-work/>
+
+## **Creating a React App**
+
+- [__Sunsetting Create React App__](https://react.dev/blog/2025/02/14/sunsetting-create-react-app)
+- React is a JavaScript library, not a full framework, but it's often used with frameworks to build web applications. React frameworks like Next.js, Gatsby, and Remix build upon React to provide additional features such as server-side rendering, routing, and data fetching.
+- For existing apps built using CRA - [How to Migrate to a Build Tool using Vite](https://www.robinwieruch.de/vite-create-react-app/), [Using Parcel](https://parceljs.org/migration/cra/)
+- [Create new React apps with a framework e.g. Next.js](https://nextjs.org/docs/app/guides/migrating/from-create-react-app), [Next.js](https://nextjs.org/), [Expo framework](https://expo.dev/)
+- [Steps to create a React project w/o using CRA](https://react.dev/learn/build-a-react-app-from-scratch), <https://www.geeksforgeeks.org/reactjs/reactjs-babel-introduction/>
+- [Server-side rendering in React](https://react.dev/blog/2025/02/14/sunsetting-create-react-app#server-rendering-is-optional)
+- [Which features make up the React team’s full-stack architecture vision?](https://react.dev/learn/creating-a-react-app#which-features-make-up-the-react-teams-full-stack-architecture-vision)
+- [Add React to an Existing Project](https://react.dev/learn/add-react-to-an-existing-project)
+
+Full-stack frameworks: These recommended frameworks support all the features needed to deploy and scale your app in production. They have integrated the latest React features and take advantage of React’s architecture. <https://react.dev/learn/creating-a-react-app>
+
+- __Next.js (App Router):__ Next.js’s App Router is a React framework that takes full advantage of React’s architecture to enable full-stack React apps. <https://nextjs.org/docs>
+- __React Router (v7):__ React Router is the most popular routing library for React and can be paired with Vite to create a full-stack React framework. It emphasizes standard Web APIs and has several ready to deploy templates for various JavaScript runtimes and platforms. <https://reactrouter.com/start/framework/installation>
+- __Expo (for native apps):__ Expo is a React framework that lets you create universal Android, iOS, and web apps with truly native UIs. It provides an SDK for React Native that makes the native parts easier to use.
