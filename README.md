@@ -109,6 +109,8 @@ If we take the previous Inspirations app, we can build a module dependency tree,
 
 ReactJS Fragments are a way to group multiple elements without adding an extra node to the DOM. It allows you to return multiple child elements from a component without wrapping them in a parent container like a <div>. We can `<React.Fragment>...</React.Fragment>` or the short hand syntax `<>...</>` to wrap multiple elements.
  
+### **How useState() works internally**
 
+<https://react.dev/learn/state-a-components-memory#how-does-react-know-which-state-to-return>
 
 
