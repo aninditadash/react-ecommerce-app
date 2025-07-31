@@ -113,4 +113,6 @@ ReactJS Fragments are a way to group multiple elements without adding an extra n
 
 <https://react.dev/learn/state-a-components-memory#how-does-react-know-which-state-to-return>
 
+### **Immer for complex state object mutations**
 
+<https://react.dev/learn/updating-objects-in-state#how-does-immer-work/>
