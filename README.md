@@ -37,6 +37,26 @@ Babel is a JavaScript transpiler that converts modern JavaScript code (like ES6+
 - __Transformation:__ Babel applies various plugins to the AST to convert the code into a desired format. For example, it converts JSX into `React.createElement()` calls or converts ES6 arrow functions into regular functions.
 - __Code Generation:__ Finally, Babel generates JavaScript code from the transformed AST. This is the final JavaScript output that browsers can execute.
 
+### **Two way Data Binding with Controlled Components**
+
+
+Value bound to state:
+The value attribute of the form element is bound to a piece of state within the component.
+onChange event handler:
+An onChange event handler is attached to the form element. When the user interacts with the element (e.g., types in an input field), this handler updates the component's state with the new value.
+UI reflects state:
+Because the input's value is tied to the state, and the state is updated by the onChange handler, changes in the UI (user input) are reflected in the state, and changes in the state are reflected in the UI. This creates the appearance of two-way binding, although it's explicitly managed through state and event handlers. 
+
+
+For form elements like input, textarea, and select, React uses controlled components to manage their state and achieve a bidirectional flow of updates.
+
+In two-way data binding, data flows in both directions. This means that the changes in the UI (like user input) are reflected in the component’s state, and changes in the state are automatically reflected in the UI. It allows the component’s state to be updated from the UI and vice versa.
+
+React, by default, does not have built-in two-way data binding as part of its core functionality. However, developers can easily implement it using controlled components (in forms, for instance), where both the state and the input field are tied together.
+
+
+
+
 ### **Reconciliation process in React**
 
 The Reconciliation process is responsible for comparing the previous Virtual DOM with the new one to determine what changed. React uses an optimized diffing algorithm to minimize the number of changes it needs to apply to the real DOM. The reconciliation process involves the following steps:
